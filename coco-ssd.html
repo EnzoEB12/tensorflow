@@ -25,7 +25,7 @@
     <input type="file" class="form-control form-control-sm"  id="seleccionArchivos" multiple accept="image/*"/>
     
     <br /><br />
-    <!-- La imagen que vamos a usar para previsualizar lo que el usuario selecciona -->
+    <!-- La imagen para previsualizar lo que el usuario selecciona -->
     <img id="imagenPrevisualizacion" style="border-radius: 10%;" width="30%"/><br><br>
 
     <button class="btn btn-success" onclick="funRes()">Analizar</button><br><br>
@@ -45,7 +45,6 @@
         // Los archivos seleccionados, pueden ser muchos o uno
         console.log(seleccionArchivos)
         const archivos = seleccionArchivos.files;
-        // Si no hay archivos salimos de la función y quitamos la imagen
       
         // Ahora tomamos el primer archivo, el cual vamos a previsualizar
         const primerArchivo = archivos[0];
