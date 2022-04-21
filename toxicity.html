@@ -34,11 +34,11 @@
 
         <script>
         function analizarT() {
-            // The minimum prediction confidence.
+            // La confianza mínima de predicción.
             const threshold = 0.9;
             const sentences = document.getElementById("textToxico").value;
-            // Load the model. Users optionally pass in a threshold and an array of
-            // labels to include.
+           // Carga el modelo
+        
             toxicity.load(threshold).then((model) => {
                 
             model.classify(sentences).then((predictions) => {
